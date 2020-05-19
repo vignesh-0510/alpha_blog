@@ -1,0 +1,35 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+html,
+body {
+  height: 100%;
+}
+
+.navbar {
+
+//background-color: #FDF6EA !important;
+
+}
+
+#brandlogo {
+  float: left;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background: asset-url('jumbotron_img.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 425px;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background: lightgray;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
