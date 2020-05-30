@@ -6,7 +6,7 @@
       <div class="col-12 col-md-10 col-lg-8">
         <div class="card text-center mt-2 shadow mb-5 bg-white rounded">
           <div class="card-header">
-            <em>by Vignesh Kumar</em>
+            <em>by <%= @article.user.username %></em>
           </div>
           <div class="card-body">
             <div class="card-text lead text-left"><%= simple_format(@article.description) %></div>
