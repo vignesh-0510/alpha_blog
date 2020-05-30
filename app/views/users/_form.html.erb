@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <div class= "form-group row justify-content-center">
           <div class="col-6">
-          <%= f.submit "Sign Up", class: "btn btn-outline-light btn-block"%>
+          <%= f.submit(@user.new_record? ? "Sign Up": "Update account", class: "btn btn-outline-light btn-block")%>
           </div>
         </div>
 
