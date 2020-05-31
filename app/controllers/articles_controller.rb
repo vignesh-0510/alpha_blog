@@ -58,7 +58,7 @@ class ArticlesController < ApplicationController
   end
 
   def require_same_user
-    if current_user != User.find(@article.user_id)
+    if current_user != User.find(@article.user_id) && !current_user.admin?
       redirect_to @article, alert: "You can only Edit your own article"
     end
   end
